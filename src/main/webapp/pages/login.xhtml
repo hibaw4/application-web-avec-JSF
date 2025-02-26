@@ -1,0 +1,9 @@
+<h:form>
+    <h:outputLabel for="username" value="Nom d'utilisateur" />
+    <h:inputText id="username" value="#{userBean.username}" />
+
+    <h:outputLabel for="password" value="Mot de passe" />
+    <h:inputSecret id="password" value="#{userBean.password}" />
+
+    <h:commandButton value="Se connecter" action="#{userBean.login}" />
+</h:form>

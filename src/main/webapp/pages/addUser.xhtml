@@ -1,0 +1,9 @@
+<h:form>
+    <h:outputLabel for="nom" value="Nom" />
+    <h:inputText id="nom" value="#{userBean.newUser.nom}" />
+
+    <h:outputLabel for="email" value="Email" />
+    <h:inputText id="email" value="#{userBean.newUser.email}" />
+
+    <h:commandButton value="Ajouter" action="#{userBean.addUser}" />
+</h:form>
